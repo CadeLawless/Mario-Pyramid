@@ -1,10 +1,9 @@
-let elmt = document.getElementById("construction");
-elmt.remove();
-
-let rows = prompt('How many rows?');
-
-printPyramid(rows);
-
+function determineHeightAndThenDrawPyramid(){
+  let clear = document.getElementById("pyramid");
+  clear.innerHTML = "";
+  let height = document.getElementById("height");
+  printPyramid(height.value);
+}
 function printPyramid(height) {
   let str = "#";
   let count = 0;
