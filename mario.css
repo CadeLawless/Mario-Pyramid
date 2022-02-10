@@ -1,0 +1,48 @@
+h1 {
+  color: rgb(182, 182, 182);
+  background-color: rgb(214, 85, 85);
+  padding: 30px;
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+#slider-num {
+  font-weight: bold;
+}
+
+#brick-symbol, #how-high {
+  padding: 0px 30px;
+}
+
+#slide-nav {
+  background-color: rgb(182, 182, 182);
+  padding: 20px;
+  text-align: center;
+  margin: 0px auto;
+}
+
+#pyramid {
+  background-color: rgb(230, 229, 229);
+  padding: 20px;
+  text-align: center;
+  margin: 0px auto;
+  color: rgb(214, 85, 85);
+}
+
+#slider-pyramid {
+  border: 2px solid rgb(214, 85, 85);
+  margin: 0px auto;
+  width: 50%;
+  border-radius: 2px;
+}
+
+select option, select {
+  background-color: rgb(230, 229, 229);
+  font-weight: bold;
+  width: 50px;
+  height: 35px;
+  border-radius: 2px;
+}

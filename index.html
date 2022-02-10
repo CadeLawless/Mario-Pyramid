@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" href="mario.css">
     <style>
 
         #pyramid {
@@ -15,30 +16,28 @@
     </style>
 </head>
 <body >
-    <h1>Mario 3</h1>
+    <h1>Pyramid Slide</h1>
 
     <br>
-
-    <p>When you say</p>
-
-    <p><strong>Draw a pyramid</strong></p>
-
-    <p>I say:</p>
-
-    <br>
-
-    <label>How high?</label>
-
-    <input type="text" id="height"/>
-
-    <br><br>
-
-    <button onclick="determineHeightAndThenDrawPyramid();">Draw a pyramid</button>
-
-    <br><br>
-
-    <div id="pyramid"></div>
-
+    <div id="slider-pyramid">
+      <div id="slide-nav">
+        <div style="display: inline;" id="brick-symbol">
+        <label>Brick Symbol: </label>
+          <select name="symbol" id="symbol" onchange="pyramidSymbol()" value="#">
+            <option value="#">#</option>
+            <option value="@">@</option>
+            <option value="X">X</option>
+            <option value="$">$</option>
+          <select>
+        </div>
+        <div style="display: inline;" id="how-high">
+          <label>How high?</label>
+          <input type="range" id="height" min="1" max="20" value="1" step="1" oninput="slider(); pyramidSymbol()">
+          <p id="slider-num" style="display: inline;">1</p>
+        </div>
+      </div>
+      <div id="pyramid"></div>
+    </div>
     <script src="mario.js"></script>
 </body>
 </html>
